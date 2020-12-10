@@ -1,0 +1,95 @@
+<div id="topimage" style="width: 100%;">
+    <img src="../assets/topcupcake.jpg" alt="Image not available" style="width:100%;">
+    <div class="centered">Product Details</div>
+</div>
+
+<div class="card"
+    style="width: 100%; padding-left: 10%; padding-right: 10%;padding-top: 2%; background: white; border-color: white;">
+    <div class="row">
+        <div class="column">
+            <br>
+            <img src="../../assets/tuckshopcake.jpg" alt="Image Loading Failed" style="width:100%; height: 100%;">
+        </div>
+        
+        <div class="column" style="padding-left: 5%; padding-top: 2%;">
+            <br>
+            <h5 style="text-align: left; font-size: 25px;">Ferrero Rocher Cake</h5><br>
+            <div style="text-align: left;">8 layers of alternating chocolate and hazelnut sponge, filled with smooth
+                hazelnut buttercream,
+                lashings of Nutella and hazelnuts. Iced with decadent chocolate ganache, meringues and even more
+                hazelnuts.</div><br>
+            <h5 style="text-align: left;font-size: 25px;">$ 55.00</h5><br>
+            <div style="text-align: left;">S6-inch | feeds approx. 12-14 | Piping Cake Piping</div><br>
+
+            <div class="row">
+                <div class="column" style="padding-left: 3% ; width: fit-content;">
+                    <div class="card"
+                        style="text-align: left; border-color: black; width: fit-content; border-radius: 8px;">
+                        <div style="padding-left: 5px; padding-top: 4%;padding-bottom: 4%;">
+                            Qty
+                            <button
+                                style="margin-left: 5px; border-radius: 100%; background-color: white; margin-right: 2px; padding-top: 0%; padding-bottom: 0%;">-</button>
+                            1
+                            <button
+                                style="margin-left: 5px; border-radius: 100%; background-color: white; margin-right: 5px; padding-top: 0%; padding-bottom: 0%;">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" style="padding-left:3% ; ">
+                    <button id="ordernow">Order Now</button><br>
+                </div>
+            </div>
+            <div style="text-align: left; color: red;">Our Rocher Cake are best enjoyed on day of delivery</div>
+            <div style="text-align: left;">Freezable - for a longer shelf life, pop your Gooey Rascals in your freezer
+                for up to one month and enjoy later.</div>
+            <div style="text-align: left;">Baked in our Harrogate Craft Bakery</div><br>
+        </div>
+    </div><br>
+</div>
+
+
+
+<div class="card" style="width: 100%; background: white; border-color: white; margin-top: 6%;">
+    <div class="row">
+        <div class="column" style="text-align: left; width: 24%; margin-left: 6%;  padding-top: 0%;">
+            <div *ngIf="ingredients" style="background-color: red;  height: 2px;   opacity: 50%;"></div>
+            <div *ngIf="description" style="background-color: gray;  height: 2px;   opacity: 50%;"></div>
+        </div>
+        <div class="column" style="text-align: left; width: 60%; padding-top: 0%; margin-right: 6%;">
+            <div *ngIf="ingredients" style="background-color: gray;  height: 2px;   opacity: 50%;"></div>
+            <div *ngIf="description" style="background-color: red;  height: 2px;  opacity: 50%;"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card"
+    style="width: 100%; padding-left: 10%; padding-right: 10%;padding-top: 2%; background: white; border-color: white;">
+    <div class="row">
+        <div class="column" style="text-align: left; width: 30%; ">
+            <div *ngIf="description" (click)="showingredients()" style="font-size: 22px;">Ingredients</div>
+            <div *ngIf="ingredients" style="font-size: 22px; color: red;">Ingredients</div>
+        </div>
+        <div class="column" style="text-align: left; width: 70%;  ">
+            <div *ngIf="ingredients" (click)="showdescription()" style="font-size: 22px;">Cake Description</div>
+            <div *ngIf="description" style="font-size: 22px; color: red;">Cake Description</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column" style="text-align: left; width: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <br>
+            <div *ngIf="ingredients">Unsalted butter, Caster sugar, organic free range eggs, self raising flour, plain
+                flour, buttermilk, vegetable oil, hazelnuts, double cream, icing sugar, dark chocolate, nutella, coffee,
+                whole milk, bicarbonate of soda. Allergy Advice: Contains nuts, gluten, eggs, milk. All our cakes are
+                made in an environment where nuts, peanuts,eggs, milk, soya, sesame and gluten are used. For this reason
+                we cannot guarantee they are free from traces of these allergens.</div>
+            <div *ngIf="description"> The cake consists of chocolaty brownie layers, alternating with hazelnut meringue
+                layers, filled with nutella frosting and chocolate ganache, coated with toasted hazelnuts and topped
+                with an amazing chocolate glaze. The cake is decorated with Ferrero Rocher truffles for an impressive
+                look that makes it totally irresistible. By far one of the most delicious and rich cakes you can ever
+                prepare for upcoming holidays or any special occasion. It may not be the easiest cake to prepare but the
+                efforts are definitely rewarded and your guests or family will be simply delighted. Enjoy!</div>
+        </div>
+    </div>
+
+</div>

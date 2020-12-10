@@ -1,0 +1,14 @@
+.active{
+    border-color: red;
+    border-style: double;
+    background-color: white;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.nav-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}

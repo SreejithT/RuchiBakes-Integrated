@@ -1,0 +1,50 @@
+.imghead{
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: #583759;
+  }
+
+  .title1{
+      font-weight: bold;
+      font-family: 'Cardo', serif;
+      font-size: 80px;
+  }
+
+  .text1{
+      color: gray;
+  }
+
+  input{
+      border-radius: 3px;
+      border: 1px solid black;
+      width: 100%;
+  }
+  textarea{
+      border-radius: 3px;
+      width: 100%;
+  }
+
+  .sbmt{
+      
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border: none;
+  }
+
+  label:after{
+    content:"*";
+    color: red;
+  }

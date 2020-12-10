@@ -1,0 +1,128 @@
+.imghead{
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: #583759;
+  }
+
+  .title1{
+      font-weight: bold;
+      font-family: 'Cardo', serif;
+      font-size: 80px;
+  }
+
+  .filter{
+      position: relative;
+  }
+
+  .searchbar{
+      position: absolute;
+    
+      left: 80px;
+  }
+  i{
+   
+    left: 80px;
+  }
+
+  .categories{
+      position: absolute;
+     
+      right: 80px;
+  }
+
+  input[type=text]{
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+input[type=text]:focus{
+  outline: none;
+
+}
+
+::placeholder{
+    text-align: center;
+    font-size: small;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .example{
+        position: static;
+        display: block;
+        margin-left: 28%;
+     
+      
+        
+    }
+  
+ 
+    
+  }
+
+  .card-body{
+      color: black;
+      text-align: left;
+  }
+
+  .card{
+      border: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: transparent
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    background: none;
+    color: black;
+    font-size: 17px;
+    border: none;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  @media screen and (max-width: 600px){
+    .title1{
+        font-size: 45px;
+    }}
+
+ 
