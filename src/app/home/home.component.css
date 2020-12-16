@@ -465,6 +465,10 @@ button{
         display:none
       }
     }
+
+    .ftrp h5{
+      min-height: 60px;
+    }
      
 
 
