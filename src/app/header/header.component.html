@@ -1,13 +1,60 @@
-<div style="text-align: center; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">460 West 34th
-    Street, 15th floor, New York - Hotline: 804-377-3580 - 804-399-3580
+<!-- <div style="text-align: center; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+ <p> 460 West 34th Street, 15th floor, New York - Hotline: 804-377-3580 - 804-399-3580</p>
     <a href="" style="margin-left: 6%; color: black;">Help</a>
     <a routerLink="/orderstatus" style="margin-left: 1%; color: black;">Order Status</a>
     <a routerLink="/contactus" href="" style="margin-left: 1%; color: black;">Contact</a>
-    <a href="#" style="margin-left: 1%;"> <img src="../assets/searchicon.png" width="30px" height="30px"></a>
+    <a href="#" style="margin-left: 1%;"> <i style="color: black;" class="fa fa-search"></i></a>
+  </div> -->
+
+  <div class="container">
+  <div class="d-flex header1">
+    <div class="mr-auto p-2 address"> <p> 460 West 34th Street, 15th floor, New York - Hotline: 804-377-3580 - 804-399-3580</p></div>
+    <div class="p-2"> <a routerLink="/orderstatus" style="color: black;">Order Status</a></div>
+    <div class="p-2"> <a routerLink="/contactus" href="" style="color: black;">Contact</a></div>
+    <div class="p-2"><a href="#"> <i style="color: black;" class="fa fa-search"></i></a></div>
   </div>
+</div>
+
+<div id="logosm">
+<div  class="d-flex justify-content-center">
+  <img src="../assets/logo.jpg" width="100px" height="100px">
+
+
+</div>
+</div>
+
+
+   <!-- <nav class="navbar navbar-expand-lg navbar-light n1">
+    
   
-  <nav class="navbar navbar-expand-sm navbar-light "
-    style="font-size: 19px; background-color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <small class="txt1">460 West 34th Street, 15th floor, New York - Hotline. 804-377-3580 - 804-399-3580</small>
+        </li>
+       
+        <li class="nav-item">
+            <a class="nav-link"  href="#"><small>Help</small> </a>
+          </li>
+          
+          <li class="nav-item">
+            <a routerLink="/orderstatus" class="nav-link"  href="#"><small> Order Status</small></a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/contactus" class="nav-link"  href="#"><small>Contact</small> </a>
+          </li>
+          <li class="nav-item">
+            <button type="submit"><small><i class="fa fa-search"></i></small></button>
+          </li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+
+  
+  <nav class="navbar navbar-expand-sm navbar-light navsize "
+    style="background-color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +62,7 @@
       </button>
       <div class="collapse navbar-collapse"></div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" routerLink="/home">
               HOME
@@ -34,9 +81,9 @@
               MY BAKES
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item logo">
             <a class="nav-link " href="#">
-              <img src="../assets/logo.jpg" width="90px" height="80px">
+              <img src="../assets/logo.jpg" width="100px" height="100px">
             </a>
           </li>
           <li class="nav-item">
@@ -55,11 +102,67 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " routerLink="/cart">
-              <img src="../assets/carticon.png" width="40px" height="40px">
+            <a class="nav-link " >
+              <i routerLink="/cart" style="color: black;" class="fa fa-shopping-cart"></i>
             </a>
           </li>
         </ul>
       </div>
     </div>
+  </nav> 
+
+ <!-- <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light n2">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home">
+            HOME
+            <span class="sr-only">
+              (current)
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/productdetails">
+            OUR STORY
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/orderpage">
+            MY BAKES
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">
+            <img src="../assets/logo.jpg" width="100px" height="100px">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product">
+            RECIPE
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">
+            BLOG
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            LOGIN
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/cart">
+            <i style="color: black;" class="fa fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
+</div> -->

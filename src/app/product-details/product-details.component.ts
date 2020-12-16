@@ -17,16 +17,16 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showingredients(){
-    this.description = false;
-    this.ingredients = true;
+  // showingredients(){
+  //   this.description = false;
+  //   this.ingredients = true;
   
     
-   }
-   showdescription(){
-    this.ingredients = false;
-    this.description = true;
-   }
+  //  }
+  //  showdescription(){
+  //   this.ingredients = false;
+  //   this.description = true;
+  //  }
    
 
 }

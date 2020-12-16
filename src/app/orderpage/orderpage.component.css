@@ -78,10 +78,7 @@
     border:1px;
     color: white;
     width: fit-content;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h5{

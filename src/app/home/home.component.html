@@ -1,13 +1,13 @@
-<div id="topimage" style="width: 100%;">
+<div class="topimage" style="width: 100%;">
     <img src="../../assets/homecupcakeimage.jpg" alt="Image not available" style="width:100%;">
-    <!-- <div class="centered">Add a touch of <div>frost to your festive </div>
-        <div style="color: rgb(248, 0, 186);">CREATIONS</div>
-    </div> -->
+    <div class="centered">Add a touch of frost to your festive <span style="color: #FF3367;">CREATIONS</span> 
+       
+    </div>
 </div>
+<br>
 
-<div class="card"
-    style="width: 100%; padding-left: 10%; padding-right: 10%;padding-top: 2%; background: white; border-color: white;">
-    <div class="row">
+
+    <!-- <div class="row">
         <div class="column" style="width: 10%;">
             <br><br><br>
             <i (click)="changesliderleft()" class="fa fa-angle-left"
@@ -34,10 +34,77 @@
             <i (click)="changesliderright()" class="fa fa-angle-right"
                 style="font-size: 60px; padding-left: 70%; text-align: right; color: gray;" aria-hidden="true"></i>
         </div>
-    </div><br>
+    </div> -->
 
-    <div class="row">
-        <div class="column" style="width: 37%;">
+
+     <div class="container">
+      
+    
+    
+
+    
+   <div class="row">
+       <div class="col-md-2 icons">
+           
+<i (click)="prev()" class="fa fa-angle-left lefticon"></i>
+
+       </div>
+       <div class="col-md-8">
+           
+        <div class="mnsld">
+            <ngx-slick-carousel [config]="slideConfig"    #slickModal="slick-carousel" >
+                <div ngxSlickItem class="slider responsive" >
+                    <img src="../../assets/deserthome.jpg" alt="Image Loading Failed" style="width:100%; ">
+                   <h5 style="text-align: center; font-size: 25px;">Desserts</h5>
+               </div>
+               <div ngxSlickItem class="slider responsive"> 
+                   <img src="../../assets/weddingcakehome.jpg" alt="Image Loading Failed" style="width:100%; ">
+                   <h5 style="text-align: center; font-size: 25px;">Wedding Cake</h5><br>
+               </div>
+               <div ngxSlickItem class="slider responsive" > 
+                   <img src="../../assets/cookieshome.jpg" alt="Image Loading Failed" style="width:100%; ">
+                   <h5 style="text-align: center; font-size: 25px;">Cookies</h5><br>
+               </div>
+               <div ngxSlickItem class="slider responsive" > 
+                   <img src="../../assets/birthdaycakehome.jpg" alt="Image Loading Failed" style="width:100%; ">
+                   <h5 style="text-align: center; font-size: 25px;">Birthday Cake</h5><br>
+               </div>
+               
+               
+               </ngx-slick-carousel>
+            </div>
+
+       </div>
+      
+    <div class="col-md-2 icons">
+        <i (click)="next()" class="fa fa-angle-right righticon"></i>
+
+    </div>
+   </div>
+
+<!-- <button class="btn-prev" (click)="prev()">prev</button>
+<button class="btn-next" (click)="next()">next</button> -->
+
+
+
+
+
+
+
+
+
+</div>   
+
+
+
+
+    <br>
+
+    <div class="card"
+    style="width: 100%; padding-left: 10%; padding-right: 10%;padding-top: 2%; background: white; border-color: white;">
+
+    
+        <!-- <div class="column" style="width: 37%;">
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 2%;"></div>
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 1%;"></div>
         </div>
@@ -48,14 +115,24 @@
         <div class="column" style="width: 37%;">
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 2%;"></div>
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 1%;"></div>
+        </div> -->
+        <div class="d-flex justify-content-center">
+            <h5 class="ftr">FEATURED PRODUCTS</h5><br>
         </div>
-    </div>
+        <div>
+            <p style="text-align: center;">Ruchi Bakes produce bake products in the following categories:</p>
+        </div>
+        <br>
+        
 
-    <div class="row">
+
+
+
+    <!-- <div class="row">
         <div class="column" style="width: 100%; text-align: center; padding-left: 0%;">
             <div>Ruchi Bakes produce bake products in the following categories:</div><br>
         </div>
-    </div><br>
+    </div><br> -->
 
     <div class="row">
         <div class="col-sm-6">
@@ -145,7 +222,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="column" style="width: 40%;">
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 2%;"></div>
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 1%;"></div>
@@ -158,14 +235,20 @@
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 2%;"></div>
             <div style="background-color: gray; width: 100%; height: 2px;   opacity: 50%; margin-top: 1%;"></div>
         </div>
+    </div> -->
+
+    <div class="d-flex justify-content-center">
+        <h5 class="ftr2">RECIPE/BLOG</h5><br>
     </div>
 
-    <div class="row" style="margin-top: 5%;">
+
+<!-- 
+     <div class="row" style="margin-top: 5%;">
         <div class="column" style="width: 50%;">
             <div
-                style="background-image: url(../../assets/halloween.jpg); width: 90%;height: 100%;text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; ">
+                style="background-image: url(../../assets/halloween.jpg); width: 90%;height: 100%;text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; align-items: stretch; ">
                 <br><br><br><br><br><br>
-                <div class="myClass" style="padding-left: 2%;">
+                <div class="myClass" style="padding-left: 4%;">
                     <div style="text-align: left; padding-top: 5%; margin-top: 30%;">Chocolate/Nut Butter/Recipes</div>
                     <div style="font-size: 25px;">Halloween Frightening Fridge Cake</div><br>
                     <button
@@ -223,14 +306,89 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  -->
 
 
 </div>
 
-<div style="background-image: url(../../assets/ingredientsend.jpg); width: 100%; margin-top: 3%;">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-stretch container">
+            <img src="../../assets/halloween.jpg" alt="" class="w-100 tlimg" >
+            <div class="content">
+                <small>Chocolate/ Nut Butter/ Recipes</small>
+                <p class="tp">Halloween Frightening Fridge Cake</p>
+                <button class="rdmr">READ MORE </button>
+            </div>
+         
+
+        </div>
+        <div class="col-md-6 smt">
+            <div class="row">
+                <div class="col-md-6 container">
+                    <img src="../../assets/dessertcook.jpg" alt="" class="w-100 tlimg">
+                    <div class="content1">
+                        <small>February 23, 2020/ Tags:Blog</small>
+                        <p class="tp">Where I Learning Cook Desserts?</p>
+                        <button class="rdmr1">READ MORE </button>
+                    </div>
+                   
+                
+
+
+                </div>
+
+                <div class="col-md-6 smt">
+                    <img src="../../assets/muffinpink.jpg" alt="" class="w-100 tlimg">
+                    <div class="content1">
+                        <small>August 27, 2020/ Tags:Blog</small>
+                        <p class="tp">Ruchi Bakes Muffins</p>
+                        <button class="rdmr2">READ MORE </button>
+                    </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+               
+                <div class="col-md-12">
+                    <br>
+                    <img src="../../assets/ingredients.jpg" alt="" class="w-100 tlimg">
+                    <div class="content2">
+                        <small>Chocolate/ Nut Butter/ Recipes</small>
+                       
+                        <p class="tp">How to have a 10,000% increase in sales! </p>
+                             <button class="rdmr3">READ MORE </button> 
+                        
+                        
+                      
+                    </div>
+                </div>
+            </div>
+            
+
+            </div>
+
+
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<br>
+
+<!-- <div style="background-image:  url(../../assets/ingredientsend.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;  width: 100%; margin-top: 3%;">
     <div class="row"  >
-        <div style=" background: rgba(19, 18, 18, 0.781);">
+        <div style=" background: rgba(19, 18, 18, 0.781); width: 100%; ">
         <div class="column" style="width: 50%; color: white;padding-left: 10%;padding-right: 3%; padding-top: 2%;padding-bottom: 5%;">
             <h5 style="text-align: left; padding-top: 3%; margin-top: 10%;">About Us
             </h5><br>
@@ -254,4 +412,26 @@
         </div>
     </div>
 </div>
+</div> -->
+
+<div class="container c1">
+    <!-- <div id="overlay"> -->
+        <div class="row">
+            <div class="col-md-6 s1">
+                <h5>About Us</h5>
+                <p><small> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae illo aspernatur perferendis numquam amet, sed quos molestias ut! In, error.</small></p>
+                <p><small>240 CENTRAL PARK, LONDON, OR 10019</small> </p>
+            </div>
+            <div class="col-md-6 s1">
+                <h5>Join our Mailing List</h5>
+                <p><small>Sign up for all the latest news, promotions and events.</small> </p>
+                <form action="">
+                    <input type="email" placeholder="Type your email..." required> &nbsp; <span> <button type="submit">Subscribe</button></span>
+                </form>
+            </div>
+
+        </div>
+
+    <!-- </div> -->
+
 </div>

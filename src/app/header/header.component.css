@@ -1,14 +1,85 @@
 .active{
     border-color: red;
-    border-style: double;
+    border-style: solid;
     background-color: white;
     border-radius: 30px;
     height: fit-content;
     width: fit-content;
 }
 
+.header1{
+    font-size: small;
+}
+
 .nav-link{
+    
     margin-left: 10px;
     margin-right: 10px;
     font-weight: bold;
 }
+
+.navsize{
+    font-size: 19px;
+}
+
+@media screen and (min-width:376px) and (max-width:769px){
+    .navsize{
+        font-size: 13px;
+    }
+}
+
+/* .badge:after{
+    content:attr(value);
+    font-size:12px;
+    background: red;
+    border-radius:50%;
+    padding:3px;
+    position:relative;
+    left:-8px;
+    top:-10px;
+    opacity:0.9;
+    } */
+
+
+
+
+
+
+
+button{
+    float: left;
+    width: 20%;
+    padding: 5px;
+    background: none;
+    color: black;
+    font-size: 17px;
+    border: none;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+@media screen and (max-width:376px){
+    .address{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .header1{
+        text-align: center;
+        padding-left: 80px;
+    }
+}
+
+#logosm{
+    display: none;
+}
+@media screen and (max-width:376px){
+    #logosm{
+        
+        display: block
+    }
+}
+

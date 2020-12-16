@@ -1,6 +1,6 @@
 
 
-#topimage {
+.topimage {
     position: relative;
     text-align: center;
     color: white;
@@ -11,8 +11,9 @@
     top: 50%;
     left: 25%;
     width: 40%;
+    height: auto;
     text-align: left;
-    margin-left: 3%;
+    padding-left: 3%;
     font-size: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transform: translate(-50%, -50%);
@@ -21,8 +22,14 @@
 }
 @media screen and (max-width: 601px){
     .centered{
-        font-size: 30px;
+        font-size: 20px;
     }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .centered{
+      font-size: 40px;
+  }
 }
 
 
@@ -77,6 +84,388 @@
   padding-bottom: 1%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-::placeholder{
+
+input[type="email"]{
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
   color: white;
 }
+
+input[type="email"]:focus{
+  color: white;
+  
+  outline:none;
+ 
+  
+}
+
+::placeholder{
+  color: white;
+  font-size: small;
+}
+
+.c1{
+  background-image: url(../../assets/ingredientsend.jpg), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  background-blend-mode: overlay;
+  height: auto;
+  width: 100%;
+  
+}
+
+#overlay {
+  position: fixed; 
+  display: none; 
+  width: 100%;
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  
+  z-index: 2; 
+}
+
+.s1{
+  color: white;
+  text-align: left;
+  padding-left: 100px ;
+  padding-top: 50px ;
+}
+
+button{
+  border-radius: 20px;
+  border: 1px solid tomato ;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  font-size: small;
+  background-color: tomato;
+  color: white;
+}
+
+@media screen and (max-width:500px){
+  button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+  button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.mnsld{
+  padding: 30px;
+}
+
+.responsive{
+  margin-right: 20px;
+  margin-left: 20px;
+  
+}
+
+.responsive:focus{
+  outline: none;
+}
+
+.ftr{
+  font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.ftr::before,.ftr::after{
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 300px;
+}
+
+.ftr:before {
+  right: 100%;
+  margin-right: 15px;
+  top: 35%;
+}
+.ftr:after {
+  left: 100%;
+  margin-left: 15px;
+  top: 35%;
+}
+
+@media screen and (max-width:376px){
+  .ftr::before,.ftr::after{
+    
+    width: 50px;
+  }
+  .ftr:before {
+    right: 75%;
+    margin-right: 15px;
+    top: 35%;
+  }
+  .ftr:after {
+    left: 75%;
+    margin-left: 15px;
+    top: 35%;
+  }
+
+
+}
+
+@media screen and (min-width:376px) and (max-width:769px){
+  .ftr::before,.ftr::after{
+    
+    width: 125px;
+  }
+
+}
+
+.ftr2{
+  font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.ftr2::before,.ftr2::after{
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 350px;
+}
+
+.ftr2:before {
+  right: 100%;
+  margin-right: 15px;
+  top: 35%;
+}
+.ftr2:after {
+  left: 100%;
+  margin-left: 15px;
+  top: 35%;
+}
+
+.lefticon{
+  font-size: 60px;
+  padding-top: 50%;
+  padding-left: 50%;
+}
+
+.righticon{
+  font-size: 60px;
+  padding-top: 50%;
+  padding-right: 50%;
+}
+
+@media screen and (max-width:376px){
+  .ftr2::before,.ftr2::after{
+    
+    width: 50px;
+  }
+  .ftr2:before {
+    right: 100%;
+    margin-right: 15px;
+    top: 35%;
+  }
+  .ftr2:after {
+    left: 100%;
+    margin-left: 15px;
+    top: 35%;
+  }
+
+
+}
+
+@media screen and (min-width:376px) and (max-width:769px){
+  .ftr2::before,.ftr2::after{
+    
+    width: 175px;
+  }
+
+}
+
+
+
+/* .myClass{
+  padding-bottom: 11%;
+} */
+
+/* @media screen and (min-width:376px) and (max-width:769px){
+  .myClass{
+    padding-bottom: 27%;
+  }
+}
+
+@media screen and (max-width:376px){
+  .myClass{
+    padding-bottom: 151%;
+  }
+} */
+
+.slick-prev:before,
+      .slick-next:before {
+        color: red;
+      }
+
+      .tlimg{
+        position: relative;
+        
+        
+      } 
+
+      .content{
+        position: absolute;
+        bottom: 0px;
+        padding:  35px;
+        text-align: left;
+        background: rgb(104, 29, 29, 0.699);
+        
+        color: white;
+        
+        
+      }
+
+
+      
+
+      .content1{
+        position: absolute;
+        top: 5px;
+        text-align: left;
+        padding-left: 14px;
+        font-size: 15px;
+       
+      }
+
+      .rdmr{
+        background: none;
+        border: 1px solid white;
+      }
+
+      .rdmr1{
+        background: rgba(0,0,0,.5);
+        border: 1px solid white;
+
+      }
+
+       .rdmr2{
+        background: rgba(245, 2, 152, 0.5);
+        border: 1px solid white;
+     
+
+      }
+
+      .rdmr3{
+        background: none;
+        border: 1px solid white;
+     
+
+      }
+
+      .content2 {
+
+        position: absolute;
+        bottom: 0px;
+        padding:  30px;
+        text-align: left;
+        background: rgba(207, 188, 11, 0.5);
+        color: white;
+        
+      }
+
+      .tp{
+        font-weight: bold;
+      }
+
+      @media screen and (max-width:541px){
+        .smt{
+          margin-top: 20px;
+        }
+      }
+
+      @media screen and (min-width:376px) and (max-width:769px){
+        .content1{
+          font-size: 10px;
+          
+        }
+
+        .rdmr1{
+          position: relative;
+          bottom: 22px;
+          padding: 10px 20px 10px 20px;
+          font-size: 10px;
+        }
+
+        .rdmr2{
+          position: relative;
+          bottom: 10px;
+          padding: 10px 20px 10px 20px;
+          font-size: 10px;
+        }
+
+        .content2{
+          padding: 24px;
+          font-size: 12px;
+        }
+        
+        .content{
+          padding: 18px;
+          font-size: 15px;
+        }
+      }
+
+     
+      
+      @media screen and (min-width:769px){
+      .content{
+        padding: 24px;
+        font-size: 25px;
+      }
+
+      .content2{
+        padding: 22px;
+        font-size: 21px;
+      }
+    }
+
+    @media screen and (max-width:376px){
+      .content{
+        padding: 26px;
+        font-size: 15px;
+      }
+
+      .content2{
+        padding: 19px;
+        font-size: 13px;
+      }
+    }
+
+    button:focus{
+      outline: none;
+    }
+
+
+    @media screen and (max-width:376px){
+      .icons{
+        display:none
+      }
+    }
+     
+
+
+    
