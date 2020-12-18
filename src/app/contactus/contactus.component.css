@@ -22,6 +22,12 @@
       font-size: 80px;
   }
 
+  @media screen and (max-width: 601px){
+    .title1{
+        font-size: 40px;
+    }
+}
+
   .text1{
       color: gray;
   }
